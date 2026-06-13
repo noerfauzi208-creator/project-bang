@@ -3,7 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Muhamad Nur Fauji - Portfolio Dashboard</title>
+
+    <!-- TAMBAHAN ELEGAN 1: Favicon & Meta Tags -->
+    <title>Personal Branding Dashboard - Muhamad Nur Fauji</title>
+    <meta property="og:title" content="Portfolio Muhamad Nur Fauji" />
+    <meta
+      property="og:description"
+      content="Santri, Pengajar, & Web Developer Enthusiast."
+    />
+    <meta property="og:image" content="Logo.png" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
 
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Amiri&family=Great+Vibes&display=swap"
@@ -17,10 +26,15 @@
   </head>
   <body>
     <div class="dashboard-container">
+      <!-- NAVBAR ASLI -->
       <header>
         <div class="logo">
-  <img src="Logo.png" alt="Logo MNF" style="height: 35px; width: auto;" />
-</div>
+          <img
+            src="Logo.png"
+            alt="Logo MNF"
+            style="height: 35px; width: auto"
+          />
+        </div>
         <ul class="nav-links">
           <li><a href="#home" class="nav-item active">Home</a></li>
           <li><a href="#tentang" class="nav-item">Tentang Saya</a></li>
@@ -37,7 +51,9 @@
         </a>
       </header>
 
-      <div class="main-grid" id="home">
+      <!-- BAGIAN ATAS (HERO, FOTO, SIDEBAR INFORMASI ASLI) -->
+      <!-- TAMBAHAN ELEGAN 2: Class 'animate-on-scroll' agar muncul perlahan -->
+      <div class="main-grid animate-on-scroll" id="home">
         <div class="hero-text">
           <h3>Assalamu'alaikum, Saya</h3>
           <h1>Muhamad Nur Fauji</h1>
@@ -149,69 +165,126 @@
         </div>
       </div>
 
-      <!-- Bagian Dokumentasi Pengajar, Mahasiswa, Alumni -->
-<div class="card documentation-bar">
-  
-  <div class="doc-card">
-    <img 
-      src="https://via.placeholder.com/400x250/0d1829/0ea5e9?text=Dokumentasi+Mengajar" 
-      alt="Dokumentasi Pengajar" 
-      class="doc-media" 
-    />
-    <div class="doc-quote">
-      <p class="quote-ar-mini">مَنْ تَعَلَّمَ عِلْمًا تَعَلَّمَ لِيَعْمَلَ بِهِ</p>
-      <p class="quote-id-mini">"Barangsiapa menuntut ilmu, maka tuntutlah untuk diamalkan."</p>
-    </div>
-    <div class="info-item">
-      <i class="fa-regular fa-user"></i>
-      <div>
-        <strong>Pengajar</strong>
-        <span>Ponpes Al Ihsan Baron</span>
-      </div>
-    </div>
-  </div>
+      <!-- TAMBAHAN ELEGAN 3: DOKUMENTASI DENGAN SLIDER (2 FOTO PER KOLOM) -->
+      <div class="card documentation-bar animate-on-scroll">
+        <!-- CARD 1: PENGAJAR -->
+        <div class="doc-card">
+          <div class="image-slider">
+            <div class="slide">
+              <img
+                src="https://via.placeholder.com/400x250/0d1829/0ea5e9?text=Geser+Kanan+>"
+                alt="Pengajar 1"
+                class="slide-img"
+              />
+              <div class="doc-quote">
+                <p class="quote-ar-mini">
+                  مَنْ تَعَلَّمَ عِلْمًا تَعَلَّمَ لِيَعْمَلَ بِهِ
+                </p>
+                <p class="quote-id-mini">"Tuntutlah ilmu untuk diamalkan."</p>
+              </div>
+            </div>
+            <div class="slide">
+              <img
+                src="https://via.placeholder.com/400x250/0d1829/0ea5e9?text=Foto+Pengajar+2"
+                alt="Pengajar 2"
+                class="slide-img"
+              />
+              <div class="doc-quote">
+                <p class="quote-ar-mini">
+                  العِلْمُ بِلَا عَمَلٍ كَالشَّجَرِ بِلَا ثَمَرٍ
+                </p>
+                <p class="quote-id-mini">
+                  "Ilmu tanpa amal bagai pohon tanpa buah."
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="info-item">
+            <i class="fa-regular fa-user"></i>
+            <div>
+              <strong>Pengajar</strong><span>Ponpes Al Ihsan Baron</span>
+            </div>
+          </div>
+        </div>
 
-  <div class="doc-card">
-    <img 
-      src="https://via.placeholder.com/400x250/0d1829/0ea5e9?text=Dokumentasi+Mahasiswa" 
-      alt="Dokumentasi Mahasiswa" 
-      class="doc-media" 
-    />
-    <div class="doc-quote">
-      <p class="quote-ar-mini">اُطْلُبُوا العِلْمَ مِنَ المَهْدِ إِلَى اللَّحْدِ</p>
-      <p class="quote-id-mini">"Tuntutlah ilmu sejak dari buaian hingga ke liang lahad."</p>
-    </div>
-    <div class="info-item">
-      <i class="fa-solid fa-graduation-cap"></i>
-      <div>
-        <strong>Mahasiswa</strong>
-        <span>STIKOM El Rahma</span>
-      </div>
-    </div>
-  </div>
+        <!-- CARD 2: MAHASISWA -->
+        <div class="doc-card">
+          <div class="image-slider">
+            <div class="slide">
+              <img
+                src="https://via.placeholder.com/400x250/0d1829/0ea5e9?text=Geser+Kanan+>"
+                alt="Mahasiswa 1"
+                class="slide-img"
+              />
+              <div class="doc-quote">
+                <p class="quote-ar-mini">طَلَبُ الْعِلْمِ فَرِيضَةٌ</p>
+                <p class="quote-id-mini">
+                  "Menuntut ilmu adalah kewajiban setiap muslim."
+                </p>
+              </div>
+            </div>
+            <div class="slide">
+              <img
+                src="https://via.placeholder.com/400x250/0d1829/0ea5e9?text=Foto+Mahasiswa+2"
+                alt="Mahasiswa 2"
+                class="slide-img"
+              />
+              <div class="doc-quote">
+                <p class="quote-ar-mini">وَفَوْقَ كُلِّ ذِي عِلْمٍ عَلِيمٌ</p>
+                <p class="quote-id-mini">
+                  "Di atas orang berilmu, ada yang lebih berilmu."
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="info-item">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <div><strong>Mahasiswa</strong><span>STIKOM El Rahma</span></div>
+          </div>
+        </div>
 
-  <div class="doc-card">
-    <img 
-      src="https://via.placeholder.com/400x250/0d1829/0ea5e9?text=Dokumentasi+Alumni" 
-      alt="Dokumentasi Alumni" 
-      class="doc-media" 
-    />
-    <div class="doc-quote">
-      <p class="quote-ar-mini">العِلْمُ بِلَا عَمَلٍ كَالشَّجَرِ بِلَا ثَمَرٍ</p>
-      <p class="quote-id-mini">"Ilmu yang tidak diamalkan bagaikan pohon yang tidak berbuah."</p>
-    </div>
-    <div class="info-item">
-      <i class="fa-solid fa-mosque"></i>
-      <div>
-        <strong>Alumni</strong>
-        <span>Ponpes Al Madani</span>
+        <!-- CARD 3: ALUMNI -->
+        <div class="doc-card">
+          <div class="image-slider">
+            <div class="slide">
+              <img
+                src="https://via.placeholder.com/400x250/0d1829/0ea5e9?text=Geser+Kanan+>"
+                alt="Alumni 1"
+                class="slide-img"
+              />
+              <div class="doc-quote">
+                <p class="quote-ar-mini">
+                  خَيْرُ النَّاسِ أَنْفَعُهُمْ لِلنَّاسِ
+                </p>
+                <p class="quote-id-mini">
+                  "Sebaik manusia adalah yang bermanfaat bagi orang lain."
+                </p>
+              </div>
+            </div>
+            <div class="slide">
+              <img
+                src="https://via.placeholder.com/400x250/0d1829/0ea5e9?text=Foto+Alumni+2"
+                alt="Alumni 2"
+                class="slide-img"
+              />
+              <div class="doc-quote">
+                <p class="quote-ar-mini">اُذْكُرِ اللهَ يَذْكُرْكَ</p>
+                <p class="quote-id-mini">
+                  "Ingatlah Allah, maka Dia akan mengingatmu."
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="info-item">
+            <i class="fa-solid fa-mosque"></i>
+            <div><strong>Alumni</strong><span>Ponpes Al Madani</span></div>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</div>
 
+      <!-- BAGIAN BAWAH ASLI (TENTANG, PENDIDIKAN, KEAHLIAN, KONTAK) -->
       <div class="bottom-grid">
-        <div class="card tentang-saya" id="tentang">
+        <div class="card tentang-saya animate-on-scroll" id="tentang">
           <div class="card-title">
             <i class="fa-regular fa-address-card"></i> Tentang Saya
           </div>
@@ -228,7 +301,20 @@
           <div class="signature">Muhamad Nur Fauji</div>
         </div>
 
-        <div class="card edu-card" id="pendidikan">
+        <!-- TAMBAHAN ELEGAN 4: Testimoni Card -->
+        <div class="card testimoni-card animate-on-scroll">
+          <div class="card-title">
+            <i class="fa-solid fa-comment-dots"></i> Testimoni Rekan
+          </div>
+          <p>
+            "Muhamad Nur Fauji adalah sosok santri modern yang sangat
+            berdedikasi. Kemampuannya menggabungkan nilai-nilai pesantren dengan
+            kemahiran teknologi web menjadikannya pengajar yang inspiratif."
+          </p>
+          <div class="testimoni-author">— Ustadz / Rekan Pengajar</div>
+        </div>
+
+        <div class="card edu-card animate-on-scroll" id="pendidikan">
           <div class="card-title">
             <i class="fa-solid fa-graduation-cap"></i> Pendidikan
           </div>
@@ -265,7 +351,6 @@
                 </div>
               </div>
             </a>
-
             <a
               href="https://www.stikomelrahma.ac.id/"
               target="_blank"
@@ -301,7 +386,7 @@
           </div>
         </div>
 
-        <div class="card" id="keahlian">
+        <div class="card animate-on-scroll" id="keahlian">
           <div class="card-title">
             <i class="fa-regular fa-star"></i> Keahlian
           </div>
@@ -378,7 +463,7 @@
           </div>
         </div>
 
-        <div class="contact-section-layout" id="kontak">
+        <div class="contact-section-layout animate-on-scroll" id="kontak">
           <div class="card">
             <div class="card-title">
               <i class="fa-regular fa-address-book"></i> Kontak Saya
@@ -391,8 +476,7 @@
               </li>
               <li>
                 <a href="mailto:bangzie2108@gmail.com"
-                  ><i class="fa-regular fa-envelope"></i>
-                  Email</a
+                  ><i class="fa-regular fa-envelope"></i> Email</a
                 >
               </li>
               <li>
@@ -401,24 +485,27 @@
                 >
               </li>
               <li>
-                <a href="https://github.com/noerfauzi208-creator?tab=repositories" target="_blank"
-                  ><i class="fa-brands fa-linkedin"></i> linkedin</a
+                <a
+                  href="https://github.com/noerfauzi208-creator"
+                  target="_blank"
+                  ><i class="fa-brands fa-linkedin"></i> LinkedIn</a
                 >
               </li>
               <li>
-                <a href="https://github.com/noerfauzi208-creator?tab=repositories" target="_blank"
+                <a
+                  href="https://github.com/noerfauzi208-creator"
+                  target="_blank"
                   ><i class="fa-brands fa-github"></i> Github</a
                 >
               </li>
             </ul>
           </div>
-
           <div class="card">
             <div class="card-title">
               <i class="fa-solid fa-location-dot"></i> Lokasi Saya
             </div>
             <div style="font-size: 11px; margin-bottom: 5px">
-              Blok Genggong, Ciledug Lor, Ciledug, Kab. Cirebon, Jawa Barat
+              Blok Genggong, Ciledug Lor, Kab. Cirebon, Jawa Barat
             </div>
             <div class="map-box">
               <iframe
@@ -443,7 +530,7 @@
         </div>
       </div>
 
-      <div class="card stats-bar">
+      <div class="card stats-bar animate-on-scroll">
         <div class="stat-item">
           <i class="fa-solid fa-users"></i>
           <div>
@@ -475,20 +562,21 @@
       </div>
 
       <footer>
-  <div class="logo">
-    <img 
-      src="Logo.png"  alt="Logo MNF" 
-      class="brand-logo" 
-      style="height: 26px; width: auto;" 
-    />
-  </div>
-  <div>© 2026 MNF Web Solutions. All Rights Reserved.</div>
+        <div class="logo">
+          <img
+            src="Logo.png"
+            alt="Logo MNF"
+            class="brand-logo"
+            style="height: 26px; width: auto"
+          />
+        </div>
+        <div>© 2026 MNF Web Solutions. All Rights Reserved.</div>
+        <div>
           Designed & Developed by <strong>Muhamad Nur Fauji</strong>
           <i class="fa-solid fa-heart" style="color: var(--primary)"></i>
         </div>
       </footer>
     </div>
-
     <script src="script.js"></script>
   </body>
 </html>
