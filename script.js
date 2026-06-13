@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   
-  // 1. ANIMASI PENGISIAN PROGRESS BAR KEAHLIAN
+  // 1. ANIMASI PENGISIAN PROGRESS BAR KEAHLIAN (LOGIKA ASLI)
   const progressBars = document.querySelectorAll(".progress");
   setTimeout(() => {
     progressBars.forEach(bar => {
@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }, 300);
 
-  // 2. ANIMASI ANGKA COUNTER STATISTIK
+  // 2. ANIMASI ANGKA COUNTER STATISTIK (LOGIKA ASLI)
   const counters = document.querySelectorAll(".counter");
   counters.forEach(counter => {
     const target = parseInt(counter.getAttribute("data-target"), 10);
@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
     updateCount();
   });
 
-  // 3. DETEKSI SCROLL NAVIGASI AKTIF
+  // 3. DETEKSI SCROLL NAVIGASI AKTIF (LOGIKA ASLI)
   const sections = document.querySelectorAll("div[id], card[id]");
   const navItems = document.querySelectorAll(".nav-item");
 
@@ -52,21 +52,29 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // 4. HANDLER ALERT LINK SOSIAL MEDIA
-  const alertLinks = document.querySelectorAll(".alert-link");
-  alertLinks.forEach(link => {
-    link.addEventListener("click", (e) => {
-      e.preventDefault();
-      alert("Terima kasih atas ketertarikan Anda! Profil ini sedang dalam tahap penyusunan dan akan segera hadir.");
-    });
-  });
-
-  // 5. HANDLER DOWNLOAD CV
+  // 4. HANDLER DOWNLOAD CV (LOGIKA ASLI)
   const downloadBtn = document.getElementById("download-cv");
   if(downloadBtn) {
     downloadBtn.addEventListener("click", (e) => {
       e.preventDefault();
-      alert("Fitur Unduh CV Terpicu. Pastikan file CV 'CV_Muhamad_Nur_Fauji.pdf' tersedia di direktori hosting Anda.");
+      alert("Fitur Unduh CV Terpicu. Pastikan file CV tersedia.");
     });
   }
+
+  // ====================================================================
+  // TAMBAHAN ELEGAN 5: OBSERVER UNTUK ANIMASI FADE-IN SAAT SCROLL BAWAH
+  // ====================================================================
+  const observerOptions = { threshold: 0.1 };
+  const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+          if (entry.isIntersecting) {
+              entry.target.classList.add("visible");
+              observer.unobserve(entry.target); // Supaya animasinya cuma jalan 1x
+          }
+      });
+  }, observerOptions);
+
+  const animatedElements = document.querySelectorAll(".animate-on-scroll");
+  animatedElements.forEach(el => observer.observe(el));
+
 });
