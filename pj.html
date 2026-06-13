@@ -1,0 +1,494 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Muhamad Nur Fauji - Portfolio Dashboard</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Amiri&family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="pjct.css" />
+  </head>
+  <body>
+    <div class="dashboard-container">
+      <header>
+        <div class="logo">
+  <img src="Logo.png" alt="Logo MNF" style="height: 35px; width: auto;" />
+</div>
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-item active">Home</a></li>
+          <li><a href="#tentang" class="nav-item">Tentang Saya</a></li>
+          <li><a href="#pendidikan" class="nav-item">Pendidikan</a></li>
+          <li><a href="#keahlian" class="nav-item">Keahlian</a></li>
+          <li><a href="#kontak" class="nav-item">Kontak</a></li>
+        </ul>
+        <a
+          href="https://wa.me/6285880188959"
+          target="_blank"
+          class="btn-contact"
+        >
+          <i class="fa-brands fa-whatsapp"></i> Hubungi
+        </a>
+      </header>
+
+      <div class="main-grid" id="home">
+        <div class="hero-text">
+          <h3>Assalamu'alaikum, Saya</h3>
+          <h1>Muhamad Nur Fauji</h1>
+          <h4>Santri • Pengajar • Computer Enthusiast</h4>
+
+          <div class="quote">
+            <i
+              class="fa-solid fa-quote-left"
+              style="
+                color: var(--primary);
+                font-size: 20px;
+                position: absolute;
+                left: -25px;
+                top: 0;
+              "
+            ></i>
+            <div class="quote-ar">
+              وَرَاءَ كُلِّ عَالِمٍ مُجَاهَدَةٌ، وَوَرَاءَ كُلِّ مُجَاهَدَةٍ
+              نَفْعُ الْأُمَّةِ
+            </div>
+            <div class="quote-id">
+              "Di balik setiap ulama ada perjuangan, dan di balik setiap
+              perjuangan ada manfaat bagi umat."
+            </div>
+          </div>
+
+          <p class="desc">
+            Lulusan Pondok Pesantren Al Madani dan mahasiswa STIKOM El Rahma
+            yang berkomitmen mempelajari teknologi sebagai sarana dakwah,
+            pendidikan, dan pengembangan media Islam di era digital.
+          </p>
+
+          <div class="action-buttons">
+            <a href="mailto:bangzie2108@gmail.com" class="btn btn-primary"
+              ><i class="fa-regular fa-envelope"></i> Hubungi Saya</a
+            >
+            <a href="#tentang" class="btn btn-outline">Lihat Profil</a>
+            <a href="#" id="download-cv" class="btn btn-outline"
+              ><i class="fa-solid fa-download"></i> Simpan CV Saya</a
+            >
+          </div>
+        </div>
+
+        <div class="hero-image-container">
+          <div class="glow-circle"></div>
+          <img
+            src="profiku.png"
+            alt="Muhamad Nur Fauji"
+            onerror="
+              this.src =
+                'https://via.placeholder.com/280x350/0d1829/0ea5e9?text=MNF+Fauji'
+            "
+          />
+        </div>
+
+        <div class="right-sidebar">
+          <div class="card">
+            <div class="card-title">
+              <i class="fa-regular fa-user"></i> Informasi Singkat
+            </div>
+            <table class="info-table">
+              <tr>
+                <td>Nama</td>
+                <td>Muhamad Nur Fauji</td>
+              </tr>
+              <tr>
+                <td>Tempat Lahir</td>
+                <td>Majalengka</td>
+              </tr>
+              <tr>
+                <td>Tanggal Lahir</td>
+                <td>08 September 2002</td>
+              </tr>
+              <tr>
+                <td>Umur</td>
+                <td>23 Tahun</td>
+              </tr>
+              <tr>
+                <td>Pekerjaan</td>
+                <td>Pengajar Ponpes Al Ihsan Baron</td>
+              </tr>
+              <tr>
+                <td style="vertical-align: top">Alamat</td>
+                <td>
+                  Blok Genggong, Ciledug Lor<br />Kecamatan Ciledug, Kab
+                  Cirebon<br />Jawa Barat
+                </td>
+              </tr>
+            </table>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <i class="fa-solid fa-trophy"></i> Prestasi & Sertifikat
+            </div>
+            <p style="color: var(--text-muted); margin-bottom: 15px">
+              Beberapa sertifikat dan prestasi akademik yang telah diraih.
+            </p>
+            <a
+              href="https://drive.google.com/file/d/1cNG5GsrniPVxaJ_vIyyafpkDk1aKQfZS/view?usp=drivesdk"
+              target="_blank"
+              class="btn btn-primary"
+              style="width: 100%; justify-content: center"
+            >
+              Lihat Sertifikat & Prestasi
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bagian Dokumentasi Pengajar, Mahasiswa, Alumni -->
+<div class="card documentation-bar">
+  
+  <div class="doc-card">
+    <img 
+      src="https://via.placeholder.com/400x250/0d1829/0ea5e9?text=Dokumentasi+Mengajar" 
+      alt="Dokumentasi Pengajar" 
+      class="doc-media" 
+    />
+    <div class="doc-quote">
+      <p class="quote-ar-mini">مَنْ تَعَلَّمَ عِلْمًا تَعَلَّمَ لِيَعْمَلَ بِهِ</p>
+      <p class="quote-id-mini">"Barangsiapa menuntut ilmu, maka tuntutlah untuk diamalkan."</p>
+    </div>
+    <div class="info-item">
+      <i class="fa-regular fa-user"></i>
+      <div>
+        <strong>Pengajar</strong>
+        <span>Ponpes Al Ihsan Baron</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="doc-card">
+    <img 
+      src="https://via.placeholder.com/400x250/0d1829/0ea5e9?text=Dokumentasi+Mahasiswa" 
+      alt="Dokumentasi Mahasiswa" 
+      class="doc-media" 
+    />
+    <div class="doc-quote">
+      <p class="quote-ar-mini">اُطْلُبُوا العِلْمَ مِنَ المَهْدِ إِلَى اللَّحْدِ</p>
+      <p class="quote-id-mini">"Tuntutlah ilmu sejak dari buaian hingga ke liang lahad."</p>
+    </div>
+    <div class="info-item">
+      <i class="fa-solid fa-graduation-cap"></i>
+      <div>
+        <strong>Mahasiswa</strong>
+        <span>STIKOM El Rahma</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="doc-card">
+    <img 
+      src="https://via.placeholder.com/400x250/0d1829/0ea5e9?text=Dokumentasi+Alumni" 
+      alt="Dokumentasi Alumni" 
+      class="doc-media" 
+    />
+    <div class="doc-quote">
+      <p class="quote-ar-mini">العِلْمُ بِلَا عَمَلٍ كَالشَّجَرِ بِلَا ثَمَرٍ</p>
+      <p class="quote-id-mini">"Ilmu yang tidak diamalkan bagaikan pohon yang tidak berbuah."</p>
+    </div>
+    <div class="info-item">
+      <i class="fa-solid fa-mosque"></i>
+      <div>
+        <strong>Alumni</strong>
+        <span>Ponpes Al Madani</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+      <div class="bottom-grid">
+        <div class="card tentang-saya" id="tentang">
+          <div class="card-title">
+            <i class="fa-regular fa-address-card"></i> Tentang Saya
+          </div>
+          <p>
+            Saya adalah seorang santri dan pengajar yang memiliki cita-cita
+            untuk mendalami ilmu komputer dan teknologi informasi sebagai sarana
+            dakwah Islam, penyebaran ilmu, serta pengabdian kepada masyarakat.
+          </p>
+          <p>
+            Teknologi bukan hanya tentang kode dan sistem, tetapi juga tentang
+            bagaimana kita memanfaatkannya untuk kebaikan, memudahkan manusia,
+            dan mendekatkan diri kepada Allah SWT.
+          </p>
+          <div class="signature">Muhamad Nur Fauji</div>
+        </div>
+
+        <div class="card edu-card" id="pendidikan">
+          <div class="card-title">
+            <i class="fa-solid fa-graduation-cap"></i> Pendidikan
+          </div>
+          <div class="edu-list-flex">
+            <a
+              href="https://almadani.ponpes.id/"
+              target="_blank"
+              class="edu-link-wrapper"
+            >
+              <div class="edu-item">
+                <div class="edu-logo">
+                  <img
+                    src="Al Madani.jpeg"
+                    alt="Madani"
+                    onerror="
+                      this.src =
+                        'https://via.placeholder.com/40/ffffff/0ea5e9?text=AM'
+                    "
+                    style="width: 100%; border-radius: 50%"
+                  />
+                </div>
+                <div class="edu-details">
+                  <h4>
+                    Pondok Pesantren Al Madani
+                    <i
+                      class="fa-solid fa-arrow-up-right-from-square"
+                      style="font-size: 10px"
+                    ></i>
+                  </h4>
+                  <ul>
+                    <li>Pendidikan Keagamaan</li>
+                    <li>Bahasa Arab, Nahwu dan Sharaf, Kitab Kuning</li>
+                  </ul>
+                </div>
+              </div>
+            </a>
+
+            <a
+              href="https://www.stikomelrahma.ac.id/"
+              target="_blank"
+              class="edu-link-wrapper"
+            >
+              <div class="edu-item">
+                <div class="edu-logo">
+                  <img
+                    src="STIKOM El Rahma.jpeg"
+                    alt="El Rahma"
+                    onerror="
+                      this.src =
+                        'https://via.placeholder.com/40/ffffff/0ea5e9?text=ER'
+                    "
+                    style="width: 100%; border-radius: 50%"
+                  />
+                </div>
+                <div class="edu-details">
+                  <h4>
+                    STIKOM El Rahma
+                    <i
+                      class="fa-solid fa-arrow-up-right-from-square"
+                      style="font-size: 10px"
+                    ></i>
+                  </h4>
+                  <ul>
+                    <li>Teknologi Informasi</li>
+                    <li>Website Development, Sistem Informasi, Multimedia</li>
+                  </ul>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="card" id="keahlian">
+          <div class="card-title">
+            <i class="fa-regular fa-star"></i> Keahlian
+          </div>
+          <div class="skills-clean-grid">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Bahasa Arab</span><span class="skill-percent">90%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress" data-width="90%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Nahwu & Sharaf</span
+                ><span class="skill-percent">85%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress" data-width="85%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Dakwah Digital</span
+                ><span class="skill-percent">90%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress" data-width="90%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>HTML & CSS</span><span class="skill-percent">85%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress" data-width="85%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Website Development</span
+                ><span class="skill-percent">80%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress" data-width="80%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Canva Design</span><span class="skill-percent">85%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress" data-width="85%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Microsoft Office</span
+                ><span class="skill-percent">80%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress" data-width="80%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Public Speaking</span
+                ><span class="skill-percent">85%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress" data-width="85%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-section-layout" id="kontak">
+          <div class="card">
+            <div class="card-title">
+              <i class="fa-regular fa-address-book"></i> Kontak Saya
+            </div>
+            <ul class="kontak-list">
+              <li>
+                <a href="https://wa.me/6285880188959" target="_blank"
+                  ><i class="fa-brands fa-whatsapp"></i> Whatsapp</a
+                >
+              </li>
+              <li>
+                <a href="mailto:bangzie2108@gmail.com"
+                  ><i class="fa-regular fa-envelope"></i>
+                  Email</a
+                >
+              </li>
+              <li>
+                <a href="https://instagram.com/lyfaz_08" target="_blank"
+                  ><i class="fa-brands fa-instagram"></i> Instagram</a
+                >
+              </li>
+              <li>
+                <a href="https://github.com/noerfauzi208-creator?tab=repositories" target="_blank"
+                  ><i class="fa-brands fa-linkedin"></i> linkedin</a
+                >
+              </li>
+              <li>
+                <a href="https://github.com/noerfauzi208-creator?tab=repositories" target="_blank"
+                  ><i class="fa-brands fa-github"></i> Github</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <div class="card-title">
+              <i class="fa-solid fa-location-dot"></i> Lokasi Saya
+            </div>
+            <div style="font-size: 11px; margin-bottom: 5px">
+              Blok Genggong, Ciledug Lor, Ciledug, Kab. Cirebon, Jawa Barat
+            </div>
+            <div class="map-box">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15843.577239089274!2d108.7335198!3d-6.8912853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2b6eef6f58be535f%3A0x401e8f1fc28da70!2sCiledug%20Lor%2C%20Kec.%20Ciledug%2C%20Kabupaten%20Cirebon%2C%20Jawa%20Barat!5e0!3m2!1sid!2sid!4v1710000000000!5m2!1sid!2sid"
+                width="100%"
+                height="120"
+                style="
+                  border: 0;
+                  filter: grayscale(1) invert(0.9) contrast(1.2);
+                "
+                allowfullscreen=""
+                loading="lazy"
+              ></iframe>
+              <a
+                href="https://maps.google.com/?q=Ciledug+Lor+Cirebon"
+                target="_blank"
+                class="btn btn-primary btn-maps"
+                >Buka Google Maps</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card stats-bar">
+        <div class="stat-item">
+          <i class="fa-solid fa-users"></i>
+          <div>
+            <h2 class="counter" data-target="120">0</h2>
+            <span>Santri Dibimbing</span>
+          </div>
+        </div>
+        <div class="stat-item">
+          <i class="fa-regular fa-calendar-check"></i>
+          <div>
+            <h2 class="counter" data-target="5">0</h2>
+            <span>Tahun Pengalaman</span>
+          </div>
+        </div>
+        <div class="stat-item">
+          <i class="fa-solid fa-chart-line"></i>
+          <div>
+            <h2 class="counter" data-target="95">0</h2>
+            <span>Kehadiran Mengajar</span>
+          </div>
+        </div>
+        <div class="stat-item">
+          <i class="fa-solid fa-book-open"></i>
+          <div>
+            <h2 class="counter" data-target="100">0</h2>
+            <span>Materi Pembelajaran</span>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+  <div class="logo">
+    <img 
+      src="Logo.png"  alt="Logo MNF" 
+      class="brand-logo" 
+      style="height: 26px; width: auto;" 
+    />
+  </div>
+  <div>© 2026 MNF Web Solutions. All Rights Reserved.</div>
+          Designed & Developed by <strong>Muhamad Nur Fauji</strong>
+          <i class="fa-solid fa-heart" style="color: var(--primary)"></i>
+        </div>
+      </footer>
+    </div>
+
+    <script src="pjct1.js"></script>
+  </body>
+</html>
