@@ -86,19 +86,20 @@ header { display: flex; justify-content: space-between; align-items: center; pad
 .stat-item span { color: var(--text-muted); }
 footer { display: flex; justify-content: space-between; align-items: center; padding: 20px 10px; color: var(--text-muted); font-size: 12px; border-top: 1px solid var(--border-color); }
 
-/* MEDIA QUERY HP ASLI */
+/* MEDIA QUERY HP ASLI (SUDAH DIPERBAIKI) */
 @media (max-width: 992px) {
-  .main-grid { grid-template-columns: 1fr 1fr; }
-  .hero-image-container { display: none; }
+  .main-grid { grid-template-columns: 1fr; gap: 40px; } /* Diubah jadi 1 kolom agar rapi menyusun ke bawah */
+  .hero-image-container { 
+    display: flex; 
+    margin: 20px 0; 
+  } /* Foto profil sekarang dimunculkan di HP! */
   .edu-list-flex, .skills-clean-grid, .contact-section-layout { grid-template-columns: 1fr; }
 }
 @media (max-width: 768px) {
   header { flex-direction: column; gap: 15px; border-radius: 15px; }
   .nav-links { flex-wrap: wrap; justify-content: center; gap: 15px; }
-  .main-grid { grid-template-columns: 1fr; }
   footer { flex-direction: column; text-align: center; gap: 10px; }
 }
-
 
 /* =========================================================
    TAMBAHAN FITUR ELEGAN (SLIDER, SCROLLBAR, FADE-IN, TESTIMONI)
